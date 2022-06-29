@@ -11,6 +11,7 @@ type Props = {
   headerTop?: string | JSX.Element;
   headerTopLogo?: boolean;
   headerTopRight?: JSX.Element;
+  headerRightUser?: boolean;
   onGoBack?: FuncVoidType;
   isGoBack?: boolean;
   hideGoBack?: boolean;
@@ -23,6 +24,7 @@ const MasterContainer = ({
   headerTopLogo,
   headerTop,
   headerTopRight,
+  headerRightUser,
   onGoBack,
   isGoBack = true,
   borderBottom = false,
@@ -43,6 +45,7 @@ const MasterContainer = ({
         <HeaderTop
           onPressGoBack={_onPressGoBack}
           headerTop={headerTop}
+          headerRightUser={headerRightUser}
           headerTopLogo={headerTopLogo}
           headerTopRight={headerTopRight}
           isGoBack={isGoBack}

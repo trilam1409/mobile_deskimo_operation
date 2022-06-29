@@ -5,7 +5,7 @@ import {
   TouchableOpacity,
   TouchableOpacityProps,
 } from 'react-native';
-import {DEFAULT_TEXT} from '../../styles/Colors.variable';
+import {DEFAULT_TEXT} from '../../modules/App/styles/Colors.variable';
 import Styles from './styles';
 
 interface Props extends TouchableOpacityProps {

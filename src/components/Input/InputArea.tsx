@@ -1,7 +1,10 @@
 import React, {forwardRef} from 'react';
 import InputPipe, {InputPipeProps} from './InputPipe';
 import {StyleSheet, View} from 'react-native';
-import {SECONDARY_GREY, WHITE_COLOR} from '../../styles/Colors.variable';
+import {
+  SECONDARY_GREY,
+  WHITE_COLOR,
+} from '../../modules/App/styles/Colors.variable';
 
 interface Props extends InputPipeProps {
   style?: object;

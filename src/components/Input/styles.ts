@@ -5,8 +5,11 @@ import {
   PRIMARY_RED,
   SECONDARY_GREY,
   WHITE_COLOR,
-} from '../../styles/Colors.variable';
-import {CaptionSmallSize, RegularSize} from '../../styles/Fonts.variable';
+} from '../../modules/App/styles/Colors.variable';
+import {
+  CaptionSmallSize,
+  RegularSize,
+} from '../../modules/App/styles/Fonts.variable';
 
 const styles = StyleSheet.create({
   pipeInput: {

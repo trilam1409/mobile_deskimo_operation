@@ -3,6 +3,8 @@ import {createStackNavigator, TransitionPresets} from '@react-navigation/stack';
 import {WHITE_COLOR} from '../modules/App/styles/Colors.variable';
 import BootstrapContainer from '../modules/App/views/Bootstrap';
 import LoginContainer from '../modules/Authentication/views/Login';
+import HomeContainer from '../modules/Home/views/Home';
+import ScannerContainer from '../modules/Home/views/Scanner';
 
 const Stack = createStackNavigator();
 
@@ -27,7 +29,12 @@ export default function Routes() {
       />
       <Stack.Screen
         name="Home"
-        component={LoginContainer}
+        component={HomeContainer}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Scanner"
+        component={ScannerContainer}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
@@ -42,4 +49,5 @@ export type RootStackParamList = {
   Bootstrap: undefined;
   Authentication: undefined;
   Home: undefined;
+  Scanner: undefined;
 };

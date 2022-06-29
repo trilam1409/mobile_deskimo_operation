@@ -3,7 +3,7 @@ import {
   fontByPlatform,
   MediumWeight,
   RegularSize,
-} from '../../styles/Fonts.variable';
+} from '../../modules/App/styles/Fonts.variable';
 import {
   PRIMARY_YELLOW,
   DEFAULT_TEXT,
@@ -12,7 +12,7 @@ import {
   WHITE_COLOR,
   SECONDARY_GREY,
   BLACK_COLOR,
-} from '../../styles/Colors.variable';
+} from '../../modules/App/styles/Colors.variable';
 
 const styles = StyleSheet.create({
   title: {

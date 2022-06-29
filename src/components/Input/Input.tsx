@@ -1,12 +1,15 @@
 import React, {forwardRef, useEffect, useState} from 'react';
 import {TextInput, StyleSheet, View, TextInputProps, Text} from 'react-native';
-import {CaptionSmallSize, RegularSize} from '../../styles/Fonts.variable';
+import {
+  CaptionSmallSize,
+  RegularSize,
+} from '../../modules/App/styles/Fonts.variable';
 import {
   ACTIVE_TEXT_FIELD,
   DEFAULT_TEXT_FIELD,
   PRIMARY_RED,
   WHITE_COLOR,
-} from '../../styles/Colors.variable';
+} from '../../modules/App/styles/Colors.variable';
 
 export interface InputProps extends TextInputProps {
   containerStyle?: object;

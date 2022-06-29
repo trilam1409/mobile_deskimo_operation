@@ -4,11 +4,13 @@ import MasterStyles from '../../styles/Master.style';
 import MasterStyle from '../../styles/Master.style';
 import {FuncVoidType} from '../../../../configs/DeclareType';
 import IcLogoText from '../../../../assets/icon/icLogoText.svg';
+import IcUserRound from '../../../../assets/icon/icUseRound.svg';
 
 type Props = {
   headerTop?: string | JSX.Element;
   headerTopLogo?: boolean;
   headerTopRight?: JSX.Element;
+  headerRightUser?: boolean;
   onPressGoBack: FuncVoidType;
   isGoBack?: boolean;
   borderBottom?: boolean;
@@ -18,6 +20,7 @@ const HeaderTop = ({
   headerTop,
   headerTopLogo,
   headerTopRight,
+  headerRightUser,
   onPressGoBack,
   isGoBack,
   borderBottom,
@@ -48,8 +51,17 @@ const HeaderTop = ({
             {headerTop}
           </Text>
         )}
-        {headerTopLogo && <IcLogoText width={120} height={40} />}
-        <View style={MasterStyles.headerTopRight}>{headerTopRight}</View>
+        {headerTopLogo && <IcLogoText width={183} height={27} />}
+
+        <View style={MasterStyles.headerTopRight}>
+          {headerRightUser && !headerTopRight ? (
+            <TouchableOpacity>
+              <IcUserRound width={36} height={36} />
+            </TouchableOpacity>
+          ) : !headerRightUser && headerTopRight ? (
+            headerTopRight
+          ) : null}
+        </View>
       </View>
     </SafeAreaView>
   );
