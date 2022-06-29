@@ -1,0 +1,2 @@
+export const IS_AUTH_STORAGE = 'IS_AUTH_STORAGE';
+export const ACCESS_TOKEN_CACHE = 'ACCESS_TOKEN_CACHE';
